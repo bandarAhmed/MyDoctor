@@ -3,7 +3,7 @@ const models = require('../modules');
 
 const Op = Sequelize.Op;
 
-exports.index = async (req, res)=>{
+exports.getDoctor = async (req, res)=>{
     let {q} = req.query;
     const searchQuery = q ? {name: {[Op.like]: `${q.replace(' ', '')}`}} : {}
     try {

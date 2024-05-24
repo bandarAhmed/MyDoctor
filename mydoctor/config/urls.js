@@ -3,3 +3,4 @@ export const Register = '/register';
 export const SIGNIN_URL = '/login';
 export const GET_USER = '/get-profile';
 export const DELETE_PRO = '/delete-acount'
+export const DOCTORS_URL = '/get-doctor'

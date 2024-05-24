@@ -18,7 +18,7 @@ router.post('/login', userController.login);
 router.put('/account/update', auth, userController.updateUser);
 router.get('/me', auth, userController.me);
 router.get('/get-profile', auth, userController.getProfile);
-router.get('/get-doctor', auth, doctorController.index);
+router.get('/get-doctor', auth, doctorController.getDoctor);
 
 // delete user
 router.delete('/delete-acount', auth, userController.deletePro);
