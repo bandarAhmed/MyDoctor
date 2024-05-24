@@ -20,4 +20,7 @@ router.get('/me', auth, userController.me);
 router.get('/get-profile', auth, userController.getProfile);
 router.get('/get-doctor', auth, doctorController.index);
 
+// delete user
+router.delete('/delete-acount', auth, userController.deletePro);
+
 module.exports = router;

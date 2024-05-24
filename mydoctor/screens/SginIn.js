@@ -41,7 +41,7 @@ export default function SginIn(props) {
             setLoading(false)
             setAlert({
                 title: "تنبيه",
-                message: e.response.data.message,
+                message: e.message,
                 type: "alert"
             })
             setVisible(true)
